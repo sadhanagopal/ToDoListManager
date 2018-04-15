@@ -1,0 +1,14 @@
+Mar 25, 2018 12:29:30 PM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+INFO: Package starting up at Sun Mar 25 12:29:30 CEST 2018
+Mar 27, 2018 7:28:26 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: I/O exception (java.net.SocketException) caught when processing request: Permission denied: connect
+Mar 27, 2018 7:28:26 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: Retrying request
+Mar 27, 2018 7:28:26 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: I/O exception (java.net.SocketException) caught when processing request: Permission denied: connect
+Mar 27, 2018 7:28:26 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: Retrying request
+Mar 27, 2018 7:28:26 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: I/O exception (java.net.SocketException) caught when processing request: Permission denied: connect
+Mar 27, 2018 7:28:26 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: Retrying request

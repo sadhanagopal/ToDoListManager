@@ -1,0 +1,40 @@
+Apr 10, 2018 4:46:49 AM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+INFO: Package starting up at Tue Apr 10 04:46:49 CEST 2018
+Apr 10, 2018 4:46:50 AM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+INFO: Latest version of package has already been enabled in the workspace; check finished in 3ms
+Apr 11, 2018 11:12:46 AM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: I/O exception (java.net.SocketException) caught when processing request: Permission denied: connect
+Apr 11, 2018 11:12:46 AM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: Retrying request
+Apr 11, 2018 11:12:46 AM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: I/O exception (java.net.SocketException) caught when processing request: Permission denied: connect
+Apr 11, 2018 11:12:46 AM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: Retrying request
+Apr 11, 2018 11:12:46 AM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: I/O exception (java.net.SocketException) caught when processing request: Permission denied: connect
+Apr 11, 2018 11:12:46 AM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: Retrying request
+Apr 11, 2018 11:12:46 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {s}->https://gosecure.cloud.genuitec.com:443: Permission denied: connect
+Apr 11, 2018 11:12:46 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {s}->https://gosecure.cloud.genuitec.com:443
+Apr 11, 2018 11:12:46 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {s}->https://gosecure.cloud.genuitec.com:443: Permission denied: connect
+Apr 11, 2018 11:12:46 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {s}->https://gosecure.cloud.genuitec.com:443
+Apr 11, 2018 11:12:46 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {s}->https://gosecure.cloud.genuitec.com:443: Permission denied: connect
+Apr 11, 2018 11:12:46 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {s}->https://gosecure.cloud.genuitec.com:443
+Apr 11, 2018 7:21:36 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: I/O exception (java.net.SocketException) caught when processing request: Permission denied: connect
+Apr 11, 2018 7:21:36 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: Retrying request
+Apr 11, 2018 7:21:36 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: I/O exception (java.net.SocketException) caught when processing request: Permission denied: connect
+Apr 11, 2018 7:21:36 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: Retrying request
+Apr 11, 2018 7:21:36 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: I/O exception (java.net.SocketException) caught when processing request: Permission denied: connect
+Apr 11, 2018 7:21:36 PM org.apache.commons.httpclient.HttpMethodDirector executeWithRetry
+INFO: Retrying request
