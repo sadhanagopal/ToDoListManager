@@ -11,32 +11,30 @@ export class ListService {
   private currentQuestionNumber: number;
 
   constructor() {
-   
-    
+
+
     /*this.quizzes = {};
     this.idCounter = 0;
     this.createQuizz('A Sample Quizz', this.getSampleQuizz1());
     this.createQuizz('A Second Sample Quizz', this.getSampleQuizz2());
     this.createQuizz('A Third Sample Quizz', this.getSampleQuizz3());*/
   }
-  
-  public getList(listId: number): List {
-    return new List(){
-      
-    }
-    
+
+  public getList(listId: number): List | any{
+    return undefined;
+
   }
-  
+
   public createList(name: string): List {
     return {
       id: 1,
       name: 'new list',
       items: []
     };
-    
-    
+
+
   }
-  
+
   public getLists(): List[]{
     return new Array<List>();
   }

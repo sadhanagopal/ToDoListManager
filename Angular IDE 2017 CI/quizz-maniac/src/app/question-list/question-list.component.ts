@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Quizz, Question } from '../data.model';
-import { QuizzService } from '../services/list.service';
+import { ListService } from '../services/list.service';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
@@ -15,7 +15,7 @@ export class QuestionListComponent implements OnInit {
   sub: Subscription;
   showDebug = true;
 
-  constructor(private quizzService: QuizzService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private quizzService: ListService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
