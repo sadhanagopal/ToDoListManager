@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { QuizzService } from '../services/list.service';
+import { ListService } from '../services/list.service';
 import { QuizzResult } from '../data.model';
 
 @Component({
@@ -12,7 +12,7 @@ export class QuizzResultsComponent implements OnInit {
   results: QuizzResult;
 
   constructor(
-    private quizzService: QuizzService,
+    private quizzService: ListService,
     private router: Router) { }
 
   ngOnInit() {

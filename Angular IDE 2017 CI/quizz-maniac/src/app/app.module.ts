@@ -64,7 +64,7 @@ import { ChuckService } from './services/chuck.service';
     MdDialogModule,
     HttpModule,
   ],
-  providers: [QuizzService, ChuckService],
+  providers: [ListService, ChuckService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

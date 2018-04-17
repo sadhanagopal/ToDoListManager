@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { QuizzService } from '../services/list.service';
+import { ListService } from '../services/list.service';
 import { Question, Quizz, QuizzAnswer, QuizzResult, Answer } from '../data.model';
 import { Subscription } from 'rxjs/Subscription';
 
@@ -21,7 +21,7 @@ export class PlayQuizzComponent implements OnInit {
   sub: Subscription;
 
   constructor(
-    private quizzService: QuizzService,
+    private quizzService: ListService,
     private router: Router,
     private route: ActivatedRoute) { }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialog} from '@angular/material';
 import { Router } from '@angular/router';
-import { QuizzService } from '../services/list.service';
+import { ListService } from '../services/list.service';
 import { Quizz } from '../data.model';
 import { NewQuizzDialogComponent } from '../start-page/new-quizz-dialog/new-quizz.dialog.component';
 
@@ -13,7 +13,7 @@ import { NewQuizzDialogComponent } from '../start-page/new-quizz-dialog/new-quiz
 export class QuizzManagerComponent implements OnInit {
   public quizzes: Quizz[];
 
-  constructor(private quizzService: QuizzService, private router: Router, public dialog: MdDialog) { }
+  constructor(private quizzService: ListService, private router: Router, public dialog: MdDialog) { }
 
   ngOnInit() {
     this.quizzes = this.quizzService.getQuizzes();
