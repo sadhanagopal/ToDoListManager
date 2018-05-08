@@ -3,7 +3,7 @@ import { MdDialog} from '@angular/material';
 import { Router } from '@angular/router';
 import { ListService } from '../services/list.service';
 import { Quizz } from '../data.model';
-import { NewQuizzDialogComponent } from '../start-page/new-quizz-dialog/new-quizz.dialog.component';
+import { NewListDialogComponent } from '../start-page/new-list-dialog/new-list.dialog.component';
 
 @Component({
   selector: 'app-quizz-manager',
@@ -24,7 +24,7 @@ export class QuizzManagerComponent implements OnInit {
   }
 
   newQuizz() {
-    const dialogRef = this.dialog.open(NewQuizzDialogComponent, {
+    const dialogRef = this.dialog.open(NewListDialogComponent, {
       width: '250px',
     });
 

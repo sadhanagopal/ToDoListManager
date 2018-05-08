@@ -5,7 +5,7 @@ import {ListService} from '../services/list.service';
 import {ChuckService} from '../services/chuck.service';
 import {Quizz, List} from '../data.model';
 
-import {NewQuizzDialogComponent} from './new-quizz-dialog/new-quizz.dialog.component';
+import {NewListDialogComponent} from './new-list-dialog/new-list.dialog.component';
 
 interface ChuckNorrisWisdom {
   icon_url: string;
@@ -32,8 +32,8 @@ export class StartPageComponent implements OnInit {
   manageQuizz(listId: number) {
     this.router.navigate([`/manage/${listId}`]);
   }
-  
-  viewList(listId: number): List{
+
+  viewList(listId: number): List {
     return this.listService.getList(listId);
   }
 
@@ -41,8 +41,8 @@ export class StartPageComponent implements OnInit {
     this.router.navigate([`/play/${quizzId}`]);
   }
 
-  newQuizz() {
-    const dialogRef = this.dialog.open(NewQuizzDialogComponent, {
+  newList() {
+    const dialogRef = this.dialog.open(NewListDialogComponent, {
       width: '250px',
     });
 

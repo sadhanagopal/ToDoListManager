@@ -1,16 +1,18 @@
 import { Component, Inject } from '@angular/core';
 import { MdDialog, MdDialogRef, MD_DIALOG_DATA } from '@angular/material';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'app-newquizz-dialog',
-    templateUrl: './new-quizz.dialog.component.html',
+    templateUrl: './new-list.dialog.component.html',
 })
-export class NewQuizzDialogComponent {
+export class NewListDialogComponent {
     name: string;
 
     constructor(
-        public dialogRef: MdDialogRef<NewQuizzDialogComponent>,
-        @Inject(MD_DIALOG_DATA) public data: any) { }
+        public dialogRef: MdDialogRef<NewListDialogComponent>,
+        @Inject(MD_DIALOG_DATA) public data: any,
+        public httpClient: HttpClient) { }
 
     onNoClick(): void {
         this.dialogRef.close();
@@ -18,6 +20,7 @@ export class NewQuizzDialogComponent {
 
     ok() {
         if (!!this.name) {
+            this.httpClient.post('/api/list/:name', this.name);
             this.dialogRef.close(this.name);
         }
     }
