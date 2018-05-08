@@ -31,7 +31,8 @@ import { QuizzManagerComponent } from './quizz-manager/quizz-manager.component';
 import { PlayQuizzComponent } from './play-quizz/play-quizz.component';
 import { QuizzResultsComponent } from './quizz-results/quizz-results.component';
 import { ChuckService } from './services/chuck.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { HttpClient } from '@angular/common/http';
     FormsModule,
     MdDialogModule,
     HttpModule,
-    HttpClient
+    HttpClientModule
+
   ],
   providers: [ListService, ChuckService],
   bootstrap: [AppComponent]
