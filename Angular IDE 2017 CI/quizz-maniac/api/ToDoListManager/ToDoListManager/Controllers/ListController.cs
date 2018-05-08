@@ -26,9 +26,9 @@ namespace ToDoListManager.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value) {
+        public void Post([FromQuery]string value) {
           
-          System.IO.File.WriteAllText("/list/list.txt", JsonConvert.SerializeObject(value));
+          System.IO.File.WriteAllText("list/list.txt", JsonConvert.SerializeObject(value));
         }
 
         // PUT api/values/5
